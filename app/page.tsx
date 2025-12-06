@@ -133,7 +133,7 @@ export default function Page() {
   }, []);
 
   const copyWifi = () => {
-    navigator.clipboard.writeText("PaeezGuest");
+    navigator.clipboard.writeText("کاربران ویژه");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -210,7 +210,7 @@ export default function Page() {
         )}
       </main>
 
-      <div className="text-center mt-10 mb-6 px-10"><p className="text-[10px] text-gray-600 leading-relaxed">به تمامی قیمت‌ها ۱۰٪ مالیات بر ارزش افزوده اضافه می‌شود.<br/>هزینه ظرف بیرون بر ۱۰,۰۰۰ تومان می‌باشد.</p></div>
+      <div className="text-center mt-10 mb-6 px-10"><p className="text-[10px] text-gray-600 leading-relaxed">به تمامی قیمت‌ها ۱۰٪ مالیات بر ارزش افزوده اضافه می‌شود.</p></div>
 
       {/* مودال اطلاعات (آپدیت شده) */}
       {showInfo && (
@@ -226,7 +226,7 @@ export default function Page() {
                <div className="bg-black/40 p-4 rounded-2xl border border-white/5">
                   <div className="flex items-center gap-3 mb-3">
                       <div className="w-8 h-8 bg-gold/10 text-gold rounded-full flex items-center justify-center"><MapPin size={16}/></div>
-                      <p className="text-sm text-white">تهران، خیابان ولیعصر، پلاک ۱</p>
+                      <p className="text-sm text-white">رفسنجان ، خیابان فرشته</p>
                   </div>
                   <div className="grid grid-cols-2 gap-2">
                       <a href="https://neshan.org/maps/route?dest_lat=35.6892&dest_lng=51.3890" target="_blank" className="flex items-center justify-center gap-2 bg-[#0054BE]/10 text-[#0054BE] py-2.5 rounded-xl text-xs font-bold hover:bg-[#0054BE]/20 transition-colors"><Navigation size={14} /> مسیریابی نشان</a>
@@ -234,16 +234,16 @@ export default function Page() {
                   </div>
                </div>
                <a href="tel:02112345678" className="flex items-center justify-between bg-black/40 p-4 rounded-2xl border border-white/5 hover:border-gold/20 transition-colors group">
-                  <div className="flex items-center gap-3"><div className="w-10 h-10 bg-green-500/10 text-green-500 rounded-full flex items-center justify-center"><Phone size={20}/></div><div><p className="text-xs text-gray-400">تلفن رزرو</p><p className="text-sm text-white font-bold">021-12345678</p></div></div>
+                  <div className="flex items-center gap-3"><div className="w-10 h-10 bg-green-500/10 text-green-500 rounded-full flex items-center justify-center"><Phone size={20}/></div><div><p className="text-xs text-gray-400">تلفن رزرو</p><p className="text-sm text-white font-bold">03434275096</p></div></div>
                </a>
                <a href="https://instagram.com/Cafe_Paeez" target="_blank" className="flex items-center justify-between bg-black/40 p-4 rounded-2xl border border-white/5 hover:border-gold/20 transition-colors group">
-                  <div className="flex items-center gap-3"><div className="w-10 h-10 bg-pink-500/10 text-pink-500 rounded-full flex items-center justify-center"><Instagram size={20}/></div><div><p className="text-xs text-gray-400">اینستاگرام</p><p className="text-sm text-white font-bold">@Cafe_Paeez</p></div></div>
+                  <div className="flex items-center gap-3"><div className="w-10 h-10 bg-pink-500/10 text-pink-500 rounded-full flex items-center justify-center"><Instagram size={20}/></div><div><p className="text-xs text-gray-400">اینستاگرام</p><p className="text-sm text-white font-bold">_cafe_paeez_@</p></div></div>
                </a>
                <button onClick={copyWifi} className="w-full flex items-center justify-between bg-black/40 p-4 rounded-2xl border border-white/5 hover:border-gold/20 transition-colors group">
-                  <div className="flex items-center gap-3"><div className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors ${copied ? 'bg-green-500 text-white' : 'bg-blue-500/10 text-blue-500'}`}>{copied ? <Check size={20}/> : <Wifi size={20}/>}</div><div className="text-right"><p className="text-xs text-gray-400">رمز وای‌فای</p><p className="text-sm text-white font-bold font-mono tracking-wider">{copied ? "کپی شد!" : "PaeezGuest"}</p></div></div><div className="flex items-center gap-1 text-[10px] text-gray-500 bg-white/5 px-2 py-1 rounded-lg"><Copy size={12} /> کپی</div>
+                  <div className="flex items-center gap-3"><div className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors ${copied ? 'bg-green-500 text-white' : 'bg-blue-500/10 text-blue-500'}`}>{copied ? <Check size={20}/> : <Wifi size={20}/>}</div><div className="text-right"><p className="text-xs text-gray-400">رمز وای‌فای</p><p className="text-sm text-white font-bold font-mono tracking-wider">{copied ? "کپی شد!" : "کاربران ویژه"}</p></div></div><div className="flex items-center gap-1 text-[10px] text-gray-500 bg-white/5 px-2 py-1 rounded-lg"><Copy size={12} /> کپی</div>
                </button>
             </div>
-            <p className="text-center text-[10px] text-gray-600 mt-6">Design by You ❤️</p>
+            <p className="text-center text-[10px] text-gray-600 mt-6">Design by You Aidin Masoumi</p>
           </div>
         </div>
       )}
